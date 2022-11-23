@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Tehsildar Complaints Portal</title>
+</head>
+
+<body>
+    <center>
+      <div class="bg-dark p-4 text-light bg-opacity-0"><h1>Tehsildar Complaints Portal</h1></div>
+        <br>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">View All Registered Complaints</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">View All Unsolved Complaints</h2></a>
+        <br>
+        <a href="{% url 'SolvedComplaints' %}"><h2><button type="button" class="btn btn-primary btn-lg">View All Solved Complaints</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">View Reopened Complaints</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">View Feedbacks</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">Update Status of Complaints</h2></a>
+        <br>
+        <br>
+        <a href="{% url 'TehsildarPortal' %}" class="btn btn-danger btn-user btn-block">
+            Go Back
+        </a>
+    </center>
+</body>
+</html>

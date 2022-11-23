@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>District Management System</title>
+</head>
+
+<body>
+    <center>
+        <div class="bg-dark p-4 text-light bg-opacity-0"><h1>District Management System</h1></div>
+          <br>
+          <br>
+          <a href="{% url 'CitizenLoginPortal' %}"><h2><button type="button" class="btn btn-primary btn-lg">Citizen Portal</button></h2></a>
+          <br>
+          <br>
+          <a href="{% url 'TehsildarLoginPortal' %}"><h2><button type="button" class="btn btn-primary btn-lg">Tehsildar Portal</button></h2></a>
+          <br>
+          <br>
+          <a href="{% url 'SDOLoginPortal' %}"><h2><button type="button" class="btn btn-primary btn-lg">Sub Division Officer Portal</button></h2></a>
+          <br>
+          <br>
+          <a href="{% url 'AdminLoginPortal' %}"><h2><button type="button" class="btn btn-primary btn-lg">Admin Portal</button></h2></a>
+          <br>
+          <br>
+          <a href="{% url 'AboutUs' %}"><h2><button type="button" class="btn btn-primary btn-lg">About Us</button></h2></a>
+    </center>
+</body>
+</html>

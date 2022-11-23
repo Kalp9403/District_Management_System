@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Tehsildar Portal</title>
+</head>
+
+<body>
+    <center>
+      <div class="bg-dark p-4 text-light bg-opacity-0"><h1>Tehsildar Portal</h1></div>
+        <br>
+        <br>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">Tehsildar Details</h2></a>
+        <br>
+        <a href="{% url 'TehsildarComplaintsPortal' %}"><h2><button type="button" class="btn btn-primary btn-lg">Complaints Undertaken</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">Information of Tehsils</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">Information of LEA</h2></a>
+        <br>
+        <a href="#"><h2><button type="button" class="btn btn-primary btn-lg">Information of Citizens</h2></a>
+        <br>
+        <br>
+        <a href="{% url 'TehsildarLoginPortal' %}" class="btn btn-danger btn-user btn-block">
+            Log Out
+        </a>
+    </center>
+</body>
+</html>
